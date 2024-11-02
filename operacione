@@ -1,0 +1,151 @@
+Navbar.html
+
+
+<div class="container text-center my-5">
+    <div class="content-box">
+        <h1>Recursos Humanos</h1>
+        <span class="label label-info">Ingresar Clientes</span>
+    </div>
+</div>
+
+-Navbar.css 
+/* navbar.component.css */
+.navbar {
+    background-color: #343a40; /* Color oscuro elegante para el navbar */
+    padding: 1rem; /* Espaciado alrededor */
+}
+
+.navbar-brand {
+    font-size: 2.5rem; /* Tamaño de fuente aumentado para el título */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto para dar efecto de profundidad */
+}
+
+.content-box {
+    background-color: #474e55; /* Color de fondo del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para el cuadro */
+    text-align: center; /* Centra el texto dentro del cuadro */
+}
+
+h1 {
+    color: rgb(190, 72, 72); /* Color del texto del título */
+    font-size: 3rem; /* Tamaño del texto del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.label {
+    display: inline-block; /* Asegura que el label sea un bloque en línea */
+    color: gray; /* Color del texto del label */
+    font-size: 1.5rem; /* Tamaño del texto del label */
+    padding: 10px 15px; /* Espaciado interno del label */
+    border-radius: 5px; /* Bordes redondeados para el label */
+    background-color: #575b5f; /* Color de fondo claro para el label */
+    margin-top: 20px; /* Espacio superior */
+}
+
+- empleados.html
+<!-- home.component.html -->
+<div class="form-container">
+    <h2 class="form-title">Formulario de Empleado</h2>
+    <form>
+        <div class="form-group">
+            <label for="first_name">Nombre:</label>
+            <input type="text" id="first_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Apellido:</label>
+            <input type="text" id="last_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="phone_number">Número de Teléfono:</label>
+            <input type="tel" id="phone_number" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="hire_date">Fecha de Contratación:</label>
+            <input type="date" id="hire_date" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="job">Trabajo:</label>
+            <input type="text" id="job" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salario:</label>
+            <input type="number" id="salary" class="form-control" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="commission_pct">Porcentaje de Comisión:</label>
+            <input type="number" id="commission_pct" class="form-control" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="manager_id">ID del Manager:</label>
+            <input type="number" id="manager_id" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="department_id">ID del Departamento:</label>
+            <input type="number" id="department_id" class="form-control" required>
+        </div>
+        <div class="form-buttons">
+            <div class="left-buttons">
+                <button type="submit" class="btn btn-primary">Agregar</button>
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </div>
+            <div class="right-buttons">
+                <button type="submit" class="btn btn-primary">Eliminar</button>
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+            </div>
+        </div>
+    </form>
+</div>
+- empleados.css
+/* home.component.css */
+.form-container {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    border: 2px solid #ccc; /* Bordes gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrado en la página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  }
+  
+  .form-title {
+    text-align: center; /* Centrar título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espacio entre campos */
+  }
+  
+  .form-control {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes gris */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .btn {
+    width: 100%; /* Botón ancho completo */
+  }
+  /* home.component.css */
+.form-buttons {
+    display: flex; /* Usar flexbox para distribuir los botones */
+    justify-content: space-between; /* Espacio entre los grupos de botones */
+    margin-top: 20px; /* Espaciado superior para los botones */
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex; /* Usar flexbox para alinear los botones dentro de cada grupo */
+}
+
+.btn {
+    margin: 0 5px; /* Espaciado horizontal entre los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+}
